@@ -17,8 +17,6 @@ class SafeGuidedDWAEnv(gym.Wrapper):
       - DWA: local short-horizon action search (dynamic window)
       - TTC: danger estimation from lidar rays + ego velocity (static obstacles)
       - Lyapunov-like stability: enforce decrease of a candidate V (heading/waypoint error)
-
-    Does NOT change observation space.
     """
 
     def __init__(

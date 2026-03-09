@@ -1,0 +1,18 @@
+ackermann_sac/
+├─ planners/
+│  ├─ __init__.py
+│  └─ hybrid_a_star.py               configuration de l'hybrid A*
+├─ envs/
+│  ├─ __init__.py
+│  └─ ackermann_2d_env.py            environnement de base pour tout modèle DRL (obstacles statique et récemment dynamique)
+|  ├─ guided_ackermann_env.py        fichier d'env inutile maintenant, je crois
+│  ├─ safe_guided_dwa_env.py         environnement combinant (Hybrid A* + DWA + TTC + Lyapunov)
+├─ train_sac.py
+└─ test_sac_vis.py
+├─ train_asac.py                     code entraînement ASAC 
+└─ test_asac_vis.py                  code test ASAC
+├─ train_DDPG.py
+└─ test_DDPG_vis.py
+├─ train_sac_hybrid_astar_dwa.py      code entraînement ASAC + Hybrid A*
+└─ test_sac_hybrid_astar_dwa.py       code test ASAC + Hybrid A*: celui que j'ai montré sur le poster
+├─ compare_training.py                fichier pour comparer les ASAC avec et sans Hybrid A*
