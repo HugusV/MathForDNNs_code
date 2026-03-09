@@ -1,0 +1,17 @@
+ackermann_sac/
+├─ planners/
+│  ├─ __init__.py
+│  └─ hybrid_a_star.py
+├─ envs/
+│  ├─ __init__.py
+│  └─ ackermann_2d_env.py
+|  ├─ guided_ackermann_env.py
+│  ├─ safe_guided_dwa_env.py          ✅ NOUVEAU (HybridA* + DWA + TTC + Lyapunov)
+├─ train_sac.py
+└─ test_sac_vis.py
+├─ train_DDPG.py
+└─ test_DDPG_vis.py
+├─ train_sac_hybrid_astar.py
+└─ test_sac_hybrid_vis.py
+└─ train_sac_hybrid_astar_dwa.py      ✅ NOUVEAU
+└─ compare_training.py
